@@ -20,3 +20,6 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 3- Synthesizing `cdk synth` creates cdk.out folder cloudformation template
 4- Bootstrap `cdk bootstrap aws://ACCOUNT-NUMBER/REGION` this command is used in the AWS Cloud Development Kit (CDK) to set up an AWS CloudFormation environment in your AWS account. This is a necessary step before deploying CDK applications. (only first time)
 5- Deploy `cdk deploy`
+
+
+6- Destroy cloudFormation `cdk destroy`

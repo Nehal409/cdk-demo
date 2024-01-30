@@ -8,7 +8,7 @@ export class CdkDemoStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // DynamoDB table
+    // DynamoDB table (Note: table is not deleting on cdk destroy)
     const todoTable = new Table(this, "todo", {
       partitionKey: { name: "name", type: AttributeType.STRING },
     });
